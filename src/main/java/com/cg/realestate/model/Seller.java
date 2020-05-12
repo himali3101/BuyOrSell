@@ -29,7 +29,7 @@ public class Seller {
 	}
 	
 	
-	public Seller(String userName, String emailId, String password, String phoneNo) {
+	public Seller(String userName, String emailId) {
 		super();
 		this.userName = userName;
 		this.emailId = emailId;

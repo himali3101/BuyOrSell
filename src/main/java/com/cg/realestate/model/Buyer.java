@@ -18,7 +18,7 @@ public class Buyer {
 		@GeneratedValue(strategy = GenerationType.AUTO)
 		private int buyerId;
 		@Column//(unique=true)
-		@NotNull
+	//	@NotNull
 	//	@Pattern(regexp = "^[A-Za-z]*$",message = "Name must be alphabet")
 		private String userName;
 	    @Column 
@@ -31,7 +31,7 @@ public class Buyer {
 		}
 		
 		
-		public Buyer(String userName, String emailId, String password, String phoneNo) {
+		public Buyer(String userName, String emailId) {
 			super();
 			this.userName = userName;
 			this.emailId = emailId;

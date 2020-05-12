@@ -29,7 +29,7 @@ public class PropertySellController {
 
 	private static final Logger logger = LoggerFactory.getLogger(PropertySellController.class);
 	
-	@Autowired
+	@Autowired  
 	PropertySellService service;
 	
 	@PostMapping(path = "/add")
@@ -41,7 +41,7 @@ public class PropertySellController {
 		logger.trace(" Inside property sold add() function");
 		logger.error("Error happened at add() of buyorsell");
 		Date date = new Date();
-		propertySell.setDate(date);
+		propertySell.setDate(date);  
 		return service.addData(propertySell);
 	}
 	

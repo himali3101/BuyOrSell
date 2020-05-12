@@ -23,7 +23,7 @@ public class Property {
 	@Column
 	private double budget;
 	@Column
-	private String popertyStatus;
+	private String propertyStatus;
 	@Column
 	private String areaPerSq;
 	@Column
@@ -44,21 +44,19 @@ public class Property {
 	
 
 	//Constructor for Flat
-	public Property( String propertyType, String room, double budget, String popertyStatus,
+	public Property( String propertyType, String room, double budget, String propertyStatus,
 			String areaPerSq, int floorNo, String location, String locality, Seller seller) {
 		super();
 		this.propertyType = propertyType;
 		this.room = room;
 		this.budget = budget;
-		this.popertyStatus = popertyStatus;
+		this.propertyStatus = propertyStatus;
 		this.areaPerSq = areaPerSq;
 		this.floorNo = floorNo;
 		this.location = location;
 		this.locality = locality;
 		this.seller = seller;
 		}
-
-
 
 
 	public Seller getUser() {
@@ -95,11 +93,11 @@ public class Property {
 	public void setBudget(double budget) {
 		this.budget = budget;
 	}
-	public String getPopertyStatus() {
-		return popertyStatus;
+	public String getPropertyStatus() {
+		return propertyStatus;
 	}
-	public void setPopertyStatus(String popertyStatus) {
-		this.popertyStatus = popertyStatus;
+	public void setPopertyStatus(String propertyStatus) {
+		this.propertyStatus = propertyStatus;
 	}
 	public String getAreaPerSq() {
 		return areaPerSq;
