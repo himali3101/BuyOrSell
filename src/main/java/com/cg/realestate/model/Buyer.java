@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 @Entity
 public class Buyer {
@@ -14,9 +17,11 @@ public class Buyer {
 		@Id
 		@GeneratedValue(strategy = GenerationType.AUTO)
 		private int buyerId;
-		@Column
+		@Column//(unique=true)
+		@NotNull
+	//	@Pattern(regexp = "^[A-Za-z]*$",message = "Name must be alphabet")
 		private String userName;
-	    @Column
+	    @Column 
 		private String emailId;
 			
 		
