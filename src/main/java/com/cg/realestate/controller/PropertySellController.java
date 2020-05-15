@@ -39,7 +39,6 @@ public class PropertySellController {
 	public PropertySell add( @RequestBody PropertySell propertySell) {
 		logger.info("Adding sold Property .");
 		logger.trace(" Inside property sold add() function");
-		logger.error("Error happened at add() of buyorsell");
 		Date date = new Date();
 		propertySell.setDate(date);  
 		return service.addData(propertySell);
@@ -52,7 +51,6 @@ public class PropertySellController {
 	public List<PropertySell> display( ){
 		logger.info("display sold properties.");
 		logger.trace(" Inside display() function of sold properties");
-		logger.error("Error happened at display() of buyorsell");
 		return service.display();
 	}
 	

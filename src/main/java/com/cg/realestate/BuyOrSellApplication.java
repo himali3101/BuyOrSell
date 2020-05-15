@@ -39,9 +39,9 @@ public class BuyOrSellApplication {
                  "API CREATION",
                  "1.0",
                  "Free to Use",
-                 new Contact("Himali Gunjal","/property" ,"himaligunjal31@gmail.com"),
+                 new Contact("Himali Gunjal","/buyorsell" ,"himaligunjal31@gmail.com"),
                  "API licence",
-                 "/limits",
+                 "/add",
                  Collections.emptyList());
         return apiInfo;  }
 
